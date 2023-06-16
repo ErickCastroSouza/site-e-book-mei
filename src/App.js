@@ -45,22 +45,43 @@ function App() {
         </section>
       </header>
 
+      <div className="mobile-header1">
+        <p></p>
+      </div>
+
+      <div className="mobile-header2">
+        <p></p>
+      </div>
+
       <div className="header-bottom">
         <p></p>
       </div>
 
       <body className="App-body">
-        <section className="title1">
-          <div className="video-div">
-            <img src={blankImg} className="main-video"></img>
-            <p id="title" className="video-title">
-              Torne-se um MEI de sucesso
-            </p>
-            <a href="/" className="buying-button1">
-              Adquira já!
-            </a>
-          </div>
+        <div className="video-div">
+          <iframe
+            width="250"
+            height="500"
+            className="main-video"
+            src="https://www.youtube.com/embed/10fJRAj6gi4?autoplay=1&mute=1"
+          ></iframe>
 
+          <iframe
+            width="380"
+            height="250"
+            className="mobile-main-video"
+            src="https://www.youtube.com/embed/10fJRAj6gi4?autoplay=1&mute=1"
+          ></iframe>
+
+          <p id="title" className="video-title">
+            Torne-se um MEI de sucesso
+          </p>
+          <a href="/" className="buying-button1">
+            Adquira já!
+          </a>
+        </div>
+
+        <section className="home-swiper-section">
           <div className="lozango1Div">
             <img src={lozango} className="lozango1"></img>
           </div>
@@ -81,23 +102,29 @@ function App() {
             onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide id="swiperText">
-              <p>
+              <p className="swiperText1">
                 Se você é um(a) empreendedor(a) que busca informações claras e
               </p>
-              <p>
+              <p className="swiperText1">
                 objetivas sobre como formalizar seu negócio, este guia é para
                 você!
               </p>
             </SwiperSlide>
 
             <SwiperSlide id="swiperText">
-              <p>Este ebook é o guia mais completo disponível atualmente</p>
-              <p>para quem deseja formalizar seu negócio como MEI.</p>
+              <p className="swiperText2">
+                Este ebook é o guia mais completo disponível atualmente
+              </p>
+              <p className="swiperText2">
+                para quem deseja formalizar seu negócio como MEI.
+              </p>
             </SwiperSlide>
 
             <SwiperSlide id="swiperText">
-              <p>Ele abrange todos os aspectos necessários para que você</p>
-              <p>
+              <p className="swiperText3">
+                Ele abrange todos os aspectos necessários para que você
+              </p>
+              <p className="swiperText3">
                 possa iniciar seu negócio de forma legal, com segurança e
                 tranquilidade.
               </p>
@@ -215,6 +242,94 @@ function App() {
           </div>
         </section>
 
+        <section className="mobile-content-swiper">
+          <Swiper
+            className="content-list"
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide className="contentSwiperSlide1">
+              <img id="contentImg" className="content-img1" src={MEI}></img>
+
+              <p id="swiperText">O que é MEI</p>
+            </SwiperSlide>
+
+            <SwiperSlide className="SwiperSlide1">
+              <img
+                id="contentImg"
+                className="content-img2"
+                src={register}
+              ></img>
+
+              <p id="swiperText">
+                Como se cadastrar no portal do empreendedor e se tornar um MEI
+              </p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                id="contentImg"
+                className="content-img2"
+                src={permitted}
+              ></img>
+
+              <p id="swiperText">
+                Quais são as atividades permitidas para MEI?
+              </p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                id="contentImg"
+                className="content-img3"
+                src={advantage}
+              ></img>
+
+              <p id="swiperText">Quais são as vantagens de ser MEI?</p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img id="contentImg" className="content-img4" src={cash}></img>
+
+              <p id="swiperText">Como funciona a tributação do MEI?</p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img id="contentImg" className="content-img5" src={nfs}></img>
+
+              <p id="swiperText">Como emitir nota fiscal sendo MEI?</p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                id="contentImg"
+                className="content-img6"
+                src={obligation}
+              ></img>
+
+              <p id="swiperText">quais são as obrigações do MEI? </p>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                id="contentImg"
+                className="content-img7"
+                src={archievement}
+              ></img>
+
+              <p id="swiperText">
+                conquiste o sucesso como MEI: 7 dicas infalíveis!
+              </p>
+            </SwiperSlide>
+          </Swiper>
+        </section>
+
         <br />
 
         <section className="subtitle1">
@@ -253,6 +368,21 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section id="card" className="mobile-buying-section">
+          <div className="mobile-buying-price-div">
+            <p className="buying-text">Compre já por apenas</p>
+            <h4 className="old-price">
+              <s>R$57,50</s>
+            </h4>
+            <h1 className="buying-price">R$37,50</h1>
+            <a href="/" className="buying-button">
+              Adquirir
+            </a>
+          </div>
+
+          <img src={tablet} className="mobile-tablet-image"></img>
+        </section>
       </body>
 
       <footer className="App-footer">
@@ -274,6 +404,10 @@ function App() {
           </a>
         </div>
       </footer>
+
+      <div className="mobile-footer">
+        <p>.</p>
+      </div>
     </div>
   );
 }
