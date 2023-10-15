@@ -63,20 +63,23 @@ function App() {
             width="250"
             height="500"
             className="main-video"
-            src="https://www.youtube.com/embed/10fJRAj6gi4?autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/10fJRAj6gi4"
           ></iframe>
 
           <iframe
             width="380"
             height="250"
             className="mobile-main-video"
-            src="https://www.youtube.com/embed/10fJRAj6gi4?autoplay=1&mute=1"
+            src="https://www.youtube.com/embed/10fJRAj6gi4"
           ></iframe>
 
           <p id="title" className="video-title">
             Torne-se um MEI de sucesso
           </p>
-          <a href="/" className="buying-button1">
+          <a
+            href="https://pay.hotmart.com/V84065811W?checkoutMode=10"
+            className="buying-button1"
+          >
             Adquira já!
           </a>
         </div>
@@ -334,10 +337,16 @@ function App() {
 
         <section className="subtitle1">
           <div id="subtitle">
-            <p>Este guia foi escrito por um contador com anos de experiência</p>
-            <p>em assessoria contábil para MEIs. Com uma linguagem simples e</p>
-            <p>acessível, sem jargões técnicos, para garantir que todas as</p>
-            <p>informações sejam facilmente compreendidas.</p>
+            <p className="sub1">
+              Este guia foi escrito por um contador com anos de experiência
+            </p>
+            <p className="sub2">
+              em assessoria contábil para MEIs. Com uma linguagem simples e
+            </p>
+            <p className="sub3">
+              acessível, sem jargões técnicos, para garantir que todas as
+            </p>
+            <p className="sub4">informações sejam facilmente compreendidas.</p>
           </div>
         </section>
         <br />
@@ -362,7 +371,10 @@ function App() {
                 <s>R$57,50</s>
               </h4>
               <h1 className="buying-price">R$37,50</h1>
-              <a href="/" className="buying-button">
+              <a
+                href="https://pay.hotmart.com/V84065811W?checkoutMode=10"
+                className="buying-button"
+              >
                 Adquirir
               </a>
             </div>
@@ -376,7 +388,10 @@ function App() {
               <s>R$57,50</s>
             </h4>
             <h1 className="buying-price">R$37,50</h1>
-            <a href="/" className="buying-button">
+            <a
+              href="https://pay.hotmart.com/V84065811W?checkoutMode=10"
+              className="buying-button"
+            >
               Adquirir
             </a>
           </div>

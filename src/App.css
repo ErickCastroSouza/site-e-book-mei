@@ -210,7 +210,28 @@
   box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
 }
 
+.sub1 {
+  position: relative;
+  top: 20px;
+}
+
+.sub2 {
+  position: relative;
+  bottom: 15px;
+}
+
+.sub3 {
+  position: relative;
+  bottom: 45px;
+}
+
+.sub4 {
+  position: relative;
+  bottom: 75px;
+}
+
 #subtitle {
+  top: 25px;
   position: relative;
   z-index: 3;
   font-family: "Poppins";
@@ -387,6 +408,86 @@ body {
   scroll-snap-type: y;
 }
 
+@media screen and (min-width: 1501px) and (max-width: 1700px) {
+  .trianglePreenchido2 {
+    bottom: 480px;
+    right: 1250px;
+  }
+  .lozango2 {
+    top: 490px;
+    left: 1175px;
+  }
+
+  .string1 {
+    left: 1175px;
+    top: 500px;
+  }
+
+  .triangle1 {
+    top: -80px;
+    right: 1250px;
+  }
+
+  .lozango1 {
+    top: 65px;
+    left: 1175px;
+  }
+
+  .trianglePreenchido1 {
+    top: -150px;
+    right: 1250px;
+  }
+
+  .main-video {
+    left: -250px;
+  }
+
+  .buying-price-div {
+    position: relative;
+    top: -70px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1500px) {
+  .trianglePreenchido2 {
+    bottom: 480px;
+    right: 1250px;
+  }
+  .lozango2 {
+    top: 490px;
+    left: 1175px;
+  }
+
+  .string1 {
+    left: 1175px;
+    top: 500px;
+  }
+
+  .triangle1 {
+    top: -80px;
+    right: 1250px;
+  }
+
+  .lozango1 {
+    top: 65px;
+    left: 1175px;
+  }
+
+  .trianglePreenchido1 {
+    top: -150px;
+    right: 1250px;
+  }
+
+  .main-video {
+    left: -250px;
+  }
+
+  .buying-price-div {
+    position: relative;
+    top: -70px;
+  }
+}
+
 @media screen and (max-width: 499px) {
   .App-body {
     width: 400px;
@@ -548,7 +649,21 @@ body {
   }
 
   #subtitle {
+    top: 30px;
     font-size: 20px;
+  }
+
+  .sub1 {
+    top: 0;
+  }
+  .sub2 {
+    bottom: 20px;
+  }
+  .sub3 {
+    bottom: 40px;
+  }
+  .sub4 {
+    bottom: 60px;
   }
 
   .buying-section {
